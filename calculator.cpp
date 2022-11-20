@@ -43,7 +43,7 @@ float convert(float deg){
 float sin(float deg){
     float sin_value = 0;
     float x = convert(deg);
-   for(int i=1,j=0; i<40; i+=2, j++){
+   for(int i=1,j=0; i<30; i+=2, j++){
       sin_value = sin_value + ((power(x, i) * power(-1, j))) / fact(i) ; 
    }
    return sin_value;
